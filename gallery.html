@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gallery | Tamil Virundhu</title><meta name="description" content="A gallery of past events and catering moments from Tamil Virundhu.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body class="page-gallery">
+<div id='site-header'></div><main>
+  <section class="page-hero">
+    <div class="wrap">
+      <span class="eyebrow">Gallery</span>
+      <h1>A curated collection of<br>memorable dining experiences.</h1>
+      <p>Moments from private celebrations, editorial dinners and intimate events curated by Tamil Virundhu.</p>
+    </div>
+  </section>
+  <section class="section">
+    <div class="wrap grid three">
+      <img class="split-image" src="assets/images/gallery/g1.jpg" alt="Catering moment">
+      <img class="split-image" src="assets/images/gallery/g2.jpg" alt="Plated dining detail">
+      <img class="split-image" src="assets/images/gallery/g3.jpg" alt="Event table scene">
+      <img class="split-image" src="assets/images/gallery/g4.jpg" alt="Table styling detail">
+      <img class="split-image" src="assets/images/gallery/g5.jpg" alt="Chef plated dish">
+      <img class="split-image" src="assets/images/gallery/g6.jpg" alt="Guests enjoying event">
+    </div>
+  </section>
+  <section class="section alt">
+    <div class="wrap cta">
+      <div>
+        <span class="eyebrow">Captured moments</span>
+        <h2>Every event is composed with mood, color and ease.</h2>
+      </div>
+      <a class="button primary" href="contact.html">Plan your event</a>
+    </div>
+  </section>
+  <section class="gallery-feature section"><div class="wrap"><div><span class="eyebrow">More than a photograph</span><h2 class="section-title">The atmosphere lives in the details.</h2><p>The soft arrival, the first plate, a quick laugh at the live counter—our galleries hold the feeling as much as the food.</p><a class="button secondary" href="contact.html">Create your moment</a></div><div class="gallery-feature-grid"><img loading="lazy" src="assets/images/gallery/g7.jpg" alt="Styled event table"><img loading="lazy" src="assets/images/gallery/g9.jpg" alt="Catering presentation"><img loading="lazy" src="assets/images/gallery/g12.jpg" alt="Celebration dining"></div></div></section><section class="gallery-video-section"><img loading="lazy" src="assets/images/gallery/event-1.jpg" alt="Tamil Virundhu event scene"><div><i class="fa-solid fa-play"></i><h2>Your celebration,<br>in motion.</h2><p>Thoughtful food, beautiful spaces and guests fully present.</p></div></section>
+  <section class="gallery-editorial gallery-reveal"><div class="wrap"><div class="gallery-editorial-title"><span class="eyebrow">A closer look</span><h2>Small details, lasting feeling.</h2><p>Every image holds a choice that helped guests feel welcomed, comfortable and present.</p></div><div class="gallery-editorial-mosaic"><img loading="lazy" src="assets/images/gallery/g8.jpg" alt="Event floral and table detail"><img loading="lazy" src="assets/images/gallery/g11.jpg" alt="Chef preparing a dish"><img loading="lazy" src="assets/images/gallery/g4.jpg" alt="Celebration food presentation"><div><i class="fa-solid fa-sparkles"></i><span>Food, flow<br>&amp; feeling</span></div></div></div></section>
+  <section class="gallery-principles gallery-reveal"><div class="wrap"><article><i class="fa-solid fa-camera"></i><h3>Worth remembering</h3><p>Beautiful food and thoughtful tables give every event a natural sense of occasion.</p></article><article><i class="fa-solid fa-heart"></i><h3>Made for people</h3><p>The best frames are the ones where everyone is relaxed enough to enjoy the moment.</p></article><article><i class="fa-solid fa-wand-magic-sparkles"></i><h3>Styled with purpose</h3><p>Colour, service and menu details work together without ever feeling overdone.</p></article></div></section>
+</main><div id='site-footer'></div>
+<script src="assets/js/script.js"></script><script>
+  (async () => { const load=async(id,file)=>{const slot=document.querySelector(id);if(!slot)return;try{const response=await fetch(file);if(!response.ok)throw new Error();slot.innerHTML=await response.text();}catch{slot.remove();}};await Promise.all([load('#site-header','components/header.html'),load('#site-footer','components/footer.html')]);const button=document.querySelector('#menuToggle');button?.addEventListener('click',()=>{const open=document.body.classList.toggle('nav-open');button.setAttribute('aria-expanded',open);});const page=location.pathname.split('/').pop()||'index.html';document.querySelectorAll('.links a').forEach(link=>{if(link.getAttribute('href')===page){link.classList.add('active');link.setAttribute('aria-current','page');}});window.initSitePreferences();const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('is-visible');observer.unobserve(entry.target);}}),{threshold:.18});document.querySelectorAll('.gallery-reveal').forEach(section=>observer.observe(section));})();
+</script>
+</body>
+</html>
+
